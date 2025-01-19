@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/*  ========== For INfo section of Home page */
+@media (min-width:1024px) and (max-width: 1290px){
+    .responsive-Info{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-columns: auto;
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        /* background-color: red; */
+    }
+}
+
+
+button:disabled {
+    opacity: 0.5; /* Makes the button appear faded */
+    cursor: not-allowed; /* Changes the cursor to indicate the button is not clickable */
+}
+
+button:disabled:hover {
+    background-color: inherit; /* Retain the original background */
+    color: inherit; /* Retain the original text color */
+    box-shadow: none; /* Remove any shadow or outline effects */
+    transform: none; /* Prevent any scale or transform effects */
+  }
